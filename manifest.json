@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "BetterSnap - Make Snapchat Web Better",
+  "description": "Screenshot & View Unread Chats, Send as Mobile, and more! Previously known as Better Snapchat.",
+  "version": "1.4.0",
+  "icons": {
+    "32": "logo32.png",
+    "48": "logo48.png",
+    "96": "logo96.png",
+    "128": "logo128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.snapchat.com/*",
+        "https://*.snapchat.com/*"
+      ],
+      "css": [
+        "./build/script.css"
+      ],
+      "js": [
+        "./build/inject.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "webNavigation",
+    "https://web.snapchat.com/*",
+    "https://*.snapchat.com/*"
+  ],
+  "web_accessible_resources": [
+    "build/script.js"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{ef4b5efd-88fa-4dc2-b8e8-f621ab40d40a}"
+    }
+  }
+}

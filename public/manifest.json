@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "BetterSnap - Make Snapchat Web Better",
+  "description": "Screenshot Freely, Save Media, Bypass Presence Detection and more! Previously known as Better Snapchat.",
+  "version": "1.0.0",
+  "icons": {
+    "32": "logo32.png",
+    "48": "logo48.png",
+    "96": "logo96.png",
+    "128": "logo128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.snapchat.com/*",
+        "https://*.snapchat.com/*"
+      ],
+      "js": [
+        "./build/script.js"
+      ],
+      "css": [
+        "./build/script.css"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "host_permissions": [
+    "https://web.snapchat.com/*",
+    "https://*.snapchat.com/*"
+  ]
+}

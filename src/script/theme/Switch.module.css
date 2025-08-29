@@ -1,0 +1,8 @@
+.track {
+  --switch-width: 40px;
+}
+
+.body {
+  align-items: center;
+  gap: 4px;
+}
