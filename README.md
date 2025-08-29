@@ -1,4 +1,4 @@
-# Better Snapchat (Previously Known as Better Snapchat)
+# Better Snapchat
 
 **Enhance your Snapchat experience on the web with features like screenshot bypass, media saving, multiple tabs, and more!**
 
